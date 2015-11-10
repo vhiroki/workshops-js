@@ -26,7 +26,7 @@
                 .attr({'fill-opacity': 0})
                 .after(function () {
 
-                    var poop = self.draw.use('poop', 'img/poop.svg');
+                    var poop = self.draw.use('poop', 'https://cdn.rawgit.com/vhiroki/workshops-js/master/promises/img/poop.svg');
                     poop.size(30, 30);
                     poop.hide();
 
@@ -76,19 +76,12 @@
                 y: tile.yPos * ( tile.height + tile.grid.marginWidth )
             });
 
-        if (tile.hasCarrot) {
-            var tileBbox = rect.bbox();
-            var carrot = tile.draw.use('carrot', 'img/carrot.svg');
-            carrot.size(50, 50);
-            carrot.center(tileBbox.x2 - 10, tileBbox.y + 10);
-        }
-
         return rect;
     }
 
     function renderCarrot (tile) {
         var tileBbox = tile.svg.bbox();
-        var carrot = tile.draw.use('carrot', 'img/carrot.svg');
+        var carrot = tile.draw.use('carrot', 'https://cdn.rawgit.com/vhiroki/workshops-js/master/promises/img/carrot.svg');
         carrot.size(50, 50);
         carrot.center(tileBbox.x2 - 10, tileBbox.y + 10);
 

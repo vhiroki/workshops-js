@@ -13,7 +13,8 @@
         var bunnyImgWidth = 50;
         var bunnyImgHeight = 50;
         this.dom = $('<img>')
-            .attr('src', 'img/bunny.png')
+            //.attr('src', 'img/bunny.png')
+            .attr('src', 'https://cdn.rawgit.com/vhiroki/workshops-js/master/promises/img/bunny.png')
             .css({
                 position: 'absolute',
                 top: (tileBbox.cy - bunnyImgHeight/2) + 'px',

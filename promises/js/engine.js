@@ -52,7 +52,7 @@
         carrotCoord: carrotCoord
     });
 
-    var bunny = new Bunny({
+    var bunny = createBunny({
         gridWrapper: $('#grid-wrapper'),
         grid: grid,
         startX: 0,
